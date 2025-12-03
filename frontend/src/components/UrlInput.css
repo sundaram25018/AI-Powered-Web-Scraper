@@ -1,0 +1,48 @@
+.url-input-container {
+    padding: 0.5rem;
+    transition: border-color 0.25s;
+}
+
+.url-input-container:focus-within {
+    border-color: var(--primary-color);
+}
+
+.url-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.url-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.url-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.scrape-button {
+    background-color: var(--primary-color);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: white;
+    padding: 0 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.25s;
+}
+
+.scrape-button:hover {
+    background-color: var(--primary-hover);
+}
+
+.scrape-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #444;
+}
